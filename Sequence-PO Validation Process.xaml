@@ -1,0 +1,261 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence_PO_Validation_Process" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1314,1004" sap2010:WorkflowViewState.IdRef="Sequence_PO_Validation_Process_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="92">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence_PO_Validation_Process" sap:VirtualizedContainerService.HintSize="535,939" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence - PO Validation Process" sap:VirtualizedContainerService.HintSize="493,849" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="DT_Rahul_Merged_Data" />
+        <Variable x:TypeArguments="x:String" Name="Rahul_Merged_Path" />
+        <Variable x:TypeArguments="sd:DataTable" Name="DT_OnlyPO" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign - All Static Values" sap:VirtualizedContainerService.HintSize="431,110" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[Rahul_Merged_Path]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">C:\Users\LENOVO\Desktop\Rahul Merged File.xlsx</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DT_Rahul_Merged_Data]" DisplayName="Read Range Workbook - DT_Rahul_Merged_Data" sap:VirtualizedContainerService.HintSize="431,97" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Merged Data" WorkbookPath="[Rahul_Merged_Path]" />
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="431,61" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="442,871" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Sequence - 1st Try" sap:VirtualizedContainerService.HintSize="400,781" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="DT_PO_Not_Matching_Values" />
+                <Variable x:TypeArguments="sd:DataTable" Name="DT_Replace_Values" />
+                <Variable x:TypeArguments="sd:DataTable" Name="DT_Remove_Duplicates" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap2010:Annotation.AnnotationText="Clone the Rahul Merged Data" DisplayName="Assign - DT_Replace_Values" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[DT_Replace_Values]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">[DT_Rahul_Merged_Data.Clone]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <Assign DisplayName="Assign - DT_Replace_Values" sap:VirtualizedContainerService.HintSize="338,74" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[DT_Replace_Values]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(
+From row In DT_Rahul_Merged_Data.AsEnumerable()
+Let RemoveSpace = CStr(row("Column5")).Replace(" ","")
+Let RemoveOddSpace = CStr(RemoveSpace).Replace(" ","")
+Let RemoveA = CStr(RemoveOddSpace).Replace("Ã","")
+Let RemoveAM = RemoveA.ToString.Replace("Â","")
+Let RemoveComma = CStr(RemoveAM).Replace(",","")
+Let RemoveSomeComma = CStr(RemoveComma).Replace("‚","")
+Let RemoveGRN = RemoveSomeComma.ToString.Replace("GRNNo","")
+Let RemoveHash = RemoveGRN.ToString.Replace("#","")
+Let RemoveSemicolon = RemoveHash.ToString.Replace(":","")
+Let FinalUpdate = RemoveSemicolon
+Select DT_Replace_Values.Rows.Add({
+	row(0),row(1),row(2),row(3),row(4),FinalUpdate,row(6),row(7),row(8),row(9),row(10),
+	row(11),row(12),row(13),row(14),row(15),row(16),row(17),row(18),row(19),row(20),
+	row(21),row(22),row(23),row(24),row(25),row(26),row(27),row(28),row(29)
+	})
+).CopyToDataTable()]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Assign - DT_Remove_Duplicates" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[DT_Remove_Duplicates]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">[DT_Rahul_Merged_Data.Clone]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap2010:Annotation.AnnotationText="Remove Al Values Like " DisplayName="Assign - DT_Remove_Duplicates" sap:VirtualizedContainerService.HintSize="338,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[DT_Remove_Duplicates]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(
+From row In DT_Replace_Values
+Let strPO = System.Text.RegularExpressions.Regex.Match(row("Column5").ToString,"(^PO/\d{6}-D\d{5}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}-D\d{5}$)").Value
+Let strFinal = If(Not String.IsNullOrWhiteSpace(strPo),If(Right(strPO,6).Equals(strPO.Substring(strPO.IndexOf("-")+1,6)),strPO.Remove(strPo.LastIndexOf("-"),7),row("Column5")),row("Column5"))
+Select DT_Remove_Duplicates.Rows.Add({
+	row(0),row(1),row(2),row(3),row(4),strFinal,row(6),row(7),row(8),row(9),row(10),
+	row(11),row(12),row(13),row(14),row(15),row(16),row(17),row(18),row(19),row(20),
+	row(21),row(22),row(23),row(24),row(25),row(26),row(27),row(28),row(29)
+	})
+).CopyToDataTable()]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <Assign sap2010:Annotation.AnnotationText="Clone The Rahul Merged Data" DisplayName="Assign - DT_PO_Not_Matching_Values" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[DT_PO_Not_Matching_Values]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">[DT_Rahul_Merged_Data.Clone]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <Assign sap2010:Annotation.AnnotationText="Now Get All the Values which does not Satisfies the Condition (^PO/SERV//\d{6}-D\d{5}$)|(^PO/\d{6}-D\d{5}$)" DisplayName="Assign - DT_PO_Not_Matching_Values" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[DT_PO_Not_Matching_Values]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">[DT_Remove_Duplicates.AsEnumerable().Where(Function(row) String.IsNullOrWhiteSpace(System.Text.RegularExpressions.Regex.Match(row("Column5").ToString,"(^PO/SERV//\d{6}-D\d{5}$)|(^PO/\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}_\d{1}$)|(^PO/\d{6}-D\d{5}_\d{1}$)").Value.ToString)).CopyToDataTable()]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+            </Sequence>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="All Data Massaging And Validation parts using LINQ" Code="Dim DT_AllOkData As DataTable = in_DT_Rahul_Merged_Data.Clone&#xD;&#xA;DT_AllOkData.Columns.Add(&quot;OK or NOT OK&quot;)&#xD;&#xA;&#xD;&#xA;' First Check All the Data where the PO matches the condition or not, if matches then save it as OK or Not Ok&#xD;&#xA;DT_AllOkData = (&#xD;&#xA;From row In in_DT_Rahul_Merged_Data&#xD;&#xA;Let strPO = System.Text.RegularExpressions.Regex.Match(row(&quot;Column5&quot;).ToString,&quot;(^PO/\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}_\d{1}$)|(^PO/\d{6}-D\d{5}_\d{1}$)&quot;).Value&#xD;&#xA;Let OK_NOTOK = If(Not String.IsNullOrWhiteSpace(strPO),&quot;OK&quot;,&quot;NOT OK&quot;)&#xD;&#xA;Select DT_AllOkData.Rows.Add({&#xD;&#xA;&#x9;row(0),row(1),row(2),row(3),row(4),row(5),row(6),row(7),row(8),row(9),row(10),&#xD;&#xA;&#x9;row(11),row(12),row(13),row(14),row(15),row(16),row(17),row(18),row(19),row(20),&#xD;&#xA;&#x9;row(21),row(22),row(23),row(24),row(25),row(26),row(27),row(28),row(29),OK_NOTOK&#xD;&#xA;&#x9;})&#xD;&#xA;).CopyToDataTable()&#xD;&#xA;&#xD;&#xA;Dim DT_OnlyPO As DataTable = DT_AllOkData.Clone&#xD;&#xA;&#xD;&#xA;' Check if Only PO is available in the PO slot and save it as Only PO&#xD;&#xA;' Eg - Check if Only Value like this Exists PO/052782 save it as Only PO&#xD;&#xA;DT_OnlyPO = (&#xD;&#xA;From row In DT_AllOkData&#xD;&#xA;Let strOnlyPO = System.Text.RegularExpressions.Regex.Match(row(&quot;Column5&quot;).ToString,&quot;(^PO/\d{6}$)|(^PO/SERV//\d{6}$)&quot;).Value&#xD;&#xA;Let OK_NOTOK = If(Not String.IsNullOrWhiteSpace(strOnlyPO) And row(&quot;OK or NOT OK&quot;).ToString.Equals(&quot;NOT OK&quot;),&quot;Only PO&quot;,row(&quot;OK or NOT OK&quot;))&#xD;&#xA;Select DT_OnlyPO.Rows.Add({&#xD;&#xA;&#x9;row(0),row(1),row(2),row(3),row(4),row(5),row(6),row(7),row(8),row(9),row(10),&#xD;&#xA;&#x9;row(11),row(12),row(13),row(14),row(15),row(16),row(17),row(18),row(19),row(20),&#xD;&#xA;&#x9;row(21),row(22),row(23),row(24),row(25),row(26),row(27),row(28),row(29),OK_NOTOK&#xD;&#xA;&#x9;})&#xD;&#xA;).CopyToDataTable()&#xD;&#xA;&#xD;&#xA;Dim DT_Removal As DataTable = DT_AllOkData.Clone&#xD;&#xA;&#xD;&#xA;'Remove All Unnecessary Values from PO and After removing if the PO matches the condition save it as OK&#xD;&#xA;'Eg - Remove GRNNO and all ExtraSpaces.&#xD;&#xA;DT_Removal = (&#xD;&#xA;From row In DT_OnlyPO.AsEnumerable()&#xD;&#xA;Let RemoveSpace = CStr(row(&quot;Column5&quot;)).Replace(&quot; &quot;,&quot;&quot;)&#xD;&#xA;Let RemoveOddSpace = CStr(RemoveSpace).Replace(&quot; &quot;,&quot;&quot;)&#xD;&#xA;Let RemoveA = CStr(RemoveOddSpace).Replace(&quot;Ã&quot;,&quot;&quot;)&#xD;&#xA;Let RemoveAM = RemoveA.ToString.Replace(&quot;Â&quot;,&quot;&quot;)&#xD;&#xA;Let RemoveComma = CStr(RemoveAM).Replace(&quot;,&quot;,&quot;&quot;)&#xD;&#xA;Let RemoveSomeComma = CStr(RemoveComma).Replace(&quot;‚&quot;,&quot;&quot;)&#xD;&#xA;Let RemoveGRN = RemoveSomeComma.ToString.Replace(&quot;GRNNo&quot;,&quot;&quot;)&#xD;&#xA;Let RemoveHash = RemoveGRN.ToString.Replace(&quot;#&quot;,&quot;&quot;)&#xD;&#xA;Let RemoveSemicolon = RemoveHash.ToString.Replace(&quot;:&quot;,&quot;&quot;)&#xD;&#xA;Let strPO = System.Text.RegularExpressions.Regex.Match(RemoveSemicolon.ToString,&quot;(^PO/\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}_\d{1}$)|(^PO/\d{6}-D\d{5}_\d{1}$)&quot;).Value&#xD;&#xA;Let OK_NOTOK = If(Not String.IsNullOrWhiteSpace(strPO) And row(&quot;OK or NOT OK&quot;).Equals(&quot;NOT OK&quot;),&quot;OK&quot;,row(&quot;OK or NOT OK&quot;))&#xD;&#xA;Let FinalUpdate = RemoveSemicolon&#xD;&#xA;Select DT_Removal.Rows.Add({&#xD;&#xA;&#x9;row(0),row(1),row(2),row(3),row(4),FinalUpdate,row(6),row(7),row(8),row(9),row(10),&#xD;&#xA;&#x9;row(11),row(12),row(13),row(14),row(15),row(16),row(17),row(18),row(19),row(20),&#xD;&#xA;&#x9;row(21),row(22),row(23),row(24),row(25),row(26),row(27),row(28),row(29),OK_NOTOK&#xD;&#xA;&#x9;})&#xD;&#xA;).CopyToDataTable()&#xD;&#xA;&#xD;&#xA;Dim DT_Make_Data_Correct As DataTable = DT_AllOkData.Clone&#xD;&#xA;&#xD;&#xA;' Remove All Extra Data by checking the values, wheteher the previous value and current value is same if same then remove it and change it.&#xD;&#xA;' Eg - PO/052782-D97326-D97326 now here D97326 are same so remove the last value.&#xD;&#xA;DT_Make_Data_Correct = (&#xD;&#xA;From row In DT_Removal&#xD;&#xA;Let strPO = System.Text.RegularExpressions.Regex.Match(row(&quot;Column5&quot;).ToString,&quot;(^PO/\d{6}-D\d{5}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}-D\d{5}$)&quot;).Value&#xD;&#xA;Let strFinal = If(Not String.IsNullOrWhiteSpace(strPo),If(Right(strPO,6).Equals(strPO.Substring(strPO.IndexOf(&quot;-&quot;)+1,6)),strPO.Remove(strPo.LastIndexOf(&quot;-&quot;),7),row(&quot;Column5&quot;)),row(&quot;Column5&quot;))&#xD;&#xA;Let strPO1 = System.Text.RegularExpressions.Regex.Match(strFinal.ToString,&quot;(^PO/\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}_\d{1}$)|(^PO/\d{6}-D\d{5}_\d{1}$)&quot;).Value&#xD;&#xA;Let OK_NOTOK = If(Not String.IsNullOrWhiteSpace(strPO1) And row(&quot;OK or NOT OK&quot;).Equals(&quot;NOT OK&quot;),&quot;OK&quot;,row(&quot;OK or NOT OK&quot;))&#xD;&#xA;Select DT_Make_Data_Correct.Rows.Add({&#xD;&#xA;&#x9;row(0),row(1),row(2),row(3),row(4),strFinal,row(6),row(7),row(8),row(9),row(10),&#xD;&#xA;&#x9;row(11),row(12),row(13),row(14),row(15),row(16),row(17),row(18),row(19),row(20),&#xD;&#xA;&#x9;row(21),row(22),row(23),row(24),row(25),row(26),row(27),row(28),row(29),OK_NOTOK&#xD;&#xA;&#x9;})&#xD;&#xA;).CopyToDataTable()&#xD;&#xA;&#xD;&#xA;Dim DT_Remove_Extra_numbers As DataTable = DT_AllOkData.Clone&#xD;&#xA;&#xD;&#xA;' Remove All Unnecessary Values like PO/SERV//022667-D98385-6767-6767 so here remove 6767-6767&#xD;&#xA;DT_Remove_Extra_numbers = (&#xD;&#xA;From row In DT_Make_Data_Correct&#xD;&#xA;Let NumberRemove = If(row(&quot;OK or NOT OK&quot;).Equals(&quot;NOT OK&quot;),If(System.Text.RegularExpressions.Regex.IsMatch(System.Text.RegularExpressions.Regex.Match(row(&quot;Column5&quot;).ToString,&quot;(?&lt;=PO/\d{6}-D\d{5}).*&quot;).Value,&quot;^-D\d{5}$&quot;),row(&quot;Column5&quot;),System.Text.RegularExpressions.Regex.Replace(row(&quot;Column5&quot;).ToString,&quot;(?&lt;=PO/\d{6}-D\d{5}).*&quot;,&quot;&quot;)),row(&quot;Column5&quot;))&#xD;&#xA;Let strPO1 = System.Text.RegularExpressions.Regex.Match(NumberRemove.ToString,&quot;(^PO/\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}$)|(^PO/SERV//\d{6}-D\d{5}_\d{1}$)|(^PO/\d{6}-D\d{5}_\d{1}$)&quot;).Value&#xD;&#xA;Let OK_NOTOK = If(Not String.IsNullOrWhiteSpace(strPO1) And row(&quot;OK or NOT OK&quot;).Equals(&quot;NOT OK&quot;),&quot;OK&quot;,row(&quot;OK or NOT OK&quot;))&#xD;&#xA;Select DT_Remove_Extra_numbers.Rows.Add({&#xD;&#xA;&#x9;row(0),row(1),row(2),row(3),row(4),NumberRemove,row(6),row(7),row(8),row(9),row(10),&#xD;&#xA;&#x9;row(11),row(12),row(13),row(14),row(15),row(16),row(17),row(18),row(19),row(20),&#xD;&#xA;&#x9;row(21),row(22),row(23),row(24),row(25),row(26),row(27),row(28),row(29),OK_NOTOK&#xD;&#xA;&#x9;})&#xD;&#xA;).CopyToDataTable()&#xD;&#xA;&#xD;&#xA;out_DT_OnlyPO = DT_Remove_Extra_numbers" DisplayName="Invoke Code - All Data Masaging with LINQ" sap:VirtualizedContainerService.HintSize="431,174" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_Rahul_Merged_Data">[DT_Rahul_Merged_Data]</InArgument>
+          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_OnlyPO">[DT_OnlyPO]</OutArgument>
+        </ui:InvokeCode.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeCode>
+      <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[DT_OnlyPO]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="431,125" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Not Proper" WorkbookPath="[Rahul_Merged_Path]" />
+    </Sequence>
+  </Sequence>
+</Activity>
